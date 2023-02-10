@@ -1,0 +1,30 @@
+@page
+@model TodoListModel
+<h2>Lista de Tarefas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tarefa</th>
+            <th>Data de Vencimento</th>
+            <th>Concluído</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var todo in Model.Todos)
+        {
+            <tr>
+                <td>@todo.Description</td>
+                <td>@todo.DueDate.ToShortDateString()</td>
+                <td>@todo.IsDone</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@todo.Id">Editar</a> |
+                    <a asp-page="./Delete" asp-route-id="@todo.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="./Create">Adicionar Tarefa</a>
