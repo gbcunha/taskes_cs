@@ -1,6 +1,6 @@
-# taskes_cs
-Lista de tarefas 
-Este código cria uma página Razor que exibe uma lista de tarefas, permite que os usuários editem ou excluam tarefas existentes e adicionem novas tarefas.
+# Lista de tarefas - Aprendendo C# 
+
+## Este código cria uma página Razor que exibe uma lista de tarefas, onde permite que os usuários editem ou excluam tarefas existentes e adicionem novas tarefas.
 
 
 
